@@ -1,6 +1,4 @@
-# automation best practices workshop
-
-![Testing for good](../graphics/testing-good.jpeg)
+# comprehensive testing with javascript workshop
 
 [#testing4good](https://twitter.com/hashtag/Testing4Good)
 
@@ -8,30 +6,15 @@ In this automation best practices workshop you will learn the latest and greates
 
 We will focus on a holistic approach of testing front-end and back-end, web and APIs, functional testing, component testing, and many other things in between 😁
 
-This workshop serves 2 purposes:
-
-1. For me to give back to the testing world and help us all upskill 🚀
-2. For us all to help a greater cause than ourselves 🌍
-
-### [About Black Girls CODE](https://www.blackgirlscode.com/about-us/)
-
-We build pathways for young women of color to embrace the current tech marketplace as builders and creators by introducing them to skills in computer programming and technology.
-
-Radical action is needed if we are to close the opportunity gap for Black women and girls. We lead a global movement to establish equal representation in the tech sector. Black Girls CODE is devoted to showing the world that Black girls can code and do so much more. Together, we are creating stronger economies and more equitable societies—ultimately realizing the true potential of democracy through diversity and inclusion.
-
-👇👇👇
-
-[Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-charity) 100% of the donations go to the cause.
-
 ## 🧠You will learn
 
-✅how to test a web application using different types of tests
+✅how to test a React web app using different types of tests
 
-✅functional ui tests with Cypress
+✅API testing w/ Cypress
 
-✅visual e2e tests
+✅E2E ui tests w/ Cypress
 
-✅visual cross-browser tests
+✅visual cross-browser + cross-platform tests
 
 ✅CICD with Github Actions
 
@@ -45,15 +28,14 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 4. Screener.io
 5. Sauce Labs
 6. Github Actions
-7. React Testing Library 
 
 ## Table Of Contents
 
-* [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
-* [CICD](./my-react-app/docs/CICD.md)
-* [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
-* [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
-* [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
+- [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
+- [CICD](./my-react-app/docs/CICD.md)
+- [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
+- [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
+- [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
 
 ## Key
 
@@ -67,17 +49,17 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 <img src="./../graphics/me-and-mia.jpg" alt="me" width="150"/>
 
-- 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
+- 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🌱 I’m currently working on [Sauce Bindings](https://github.com/saucelabs/sauce_bindings)
 - 💬 Ask me about environmentalism, veganism, test automation, and fitness
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
   - [JS Testing Newsletter](https://ultimateqa.ck.page/js-testing-tips)
-  - [Youtube](https://youtube.com/ultimateqa)
-  - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/Nikolay_A00)
+  - [Testing training on Youtube](https://youtube.com/ultimateqa)
+  - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
+  - [Twitter for 🔥 Dev quotes](https://twitter.com/Nikolay_A00)
 
 ## Your TA: Josh Grant
 
@@ -89,12 +71,13 @@ Currently he is a solution architect at Sauce Labs, helping enterprise teams suc
 ## ⚙️ Setup
 
 ### 1. Install Node 14 LTS
+
 1.  Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
-      * It should be just a single command to run in our terminal
-        * **!Don't forget to restart your terminal!**
-2. After installation, confirm install with `nvm --version`
-3. Intall Node 14 with `nvm install 14` 
-  
+    - It should be just a single command to run in our terminal
+      - **!Don't forget to restart your terminal!**
+2.  After installation, confirm install with `nvm --version`
+3.  Intall Node 14 with `nvm install 14`
+
   <br/>
   <details>
     <summary>
@@ -112,8 +95,8 @@ Currently he is a solution architect at Sauce Labs, helping enterprise teams suc
   </details>
   <br/><br/>
 
-   * Confirm node installation with `node --version` and seeing `v14.16.1` or similar
-   * Confirm NVM is set to 14 for default by running the following commands:
+- Confirm node installation with `node --version` and seeing `v14.16.1` or similar
+- Confirm NVM is set to 14 for default by running the following commands:
 
 ```bash
 nvm list #will show all versions
@@ -121,18 +104,20 @@ nvm use 14 #to use 14
 nvm alias default 14.16.x #to set it to the default
 ```
 
-
-
 ### 2.Clone and fork the repo
+
 1. Sign up for a free [Github account](https://github.com/)
 2. Fork this respository
- * Make sure you are logged into Github
- * click the Fork in the upper right of the Github.
+
+- Make sure you are logged into Github
+- click the Fork in the upper right of the Github.
+
 3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
 
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
+
 4. **Navigate to the directory of where you cloned your repo**
 
 `cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
@@ -143,6 +128,7 @@ git clone URL_OF_YOUR_FORK
 cd testing-for-charity/my-react-app
 npm install && npm start
 ```
+
 <br/>
 <details>
   <summary>
@@ -160,11 +146,11 @@ npm install && npm start
 
     Note that the development build is not optimized.
     To create a production build, use npm run build.
+
   </code>
 </details>
 
-  <br/><br/>
-
+<br/><br/>
 
 **Don't worry about fixing any warnings that may appear during `npm install`**
 
@@ -180,11 +166,5 @@ Get your [Screener account](https://saucelabs.com/demo-request-vt)
 
 ### 6.Set Your Sauce Labs Credentials
 
-* [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
-* [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
-
-
-
-
-
-
+- [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
+- [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
