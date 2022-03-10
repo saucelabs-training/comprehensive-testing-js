@@ -2,11 +2,13 @@
 
 [#testing4good](https://twitter.com/hashtag/Testing4Good)
 
-In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
+In this workshop you will learn the latest and greatest tools and techniques to improve your ability to test modern web applications.
 
-We will focus on a holistic approach of testing front-end and back-end, web and APIs, functional testing, component testing, and many other things in between 😁
+You will focus on a holistic approach of testing front-end, APIs, and back-end.
 
-## 🧠You will learn
+You will analyze risks and prevent those risks with functional testing, api testing, visual testing and a lot more 💪
+
+## 🧠 You will learn
 
 ✅how to test a React web app using different types of tests
 
