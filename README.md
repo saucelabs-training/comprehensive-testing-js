@@ -10,17 +10,15 @@ You will analyze risks and prevent those risks with functional testing, api test
 
 ## 🧠 You will learn
 
-✅how to test a React web app using different types of tests
-
 ✅API testing w/ Cypress
+
+✅how to test a React web app using different types of tests
 
 ✅E2E ui tests w/ Cypress
 
 ✅visual cross-browser + cross-platform tests
 
 ✅CICD with Github Actions
-
-✅component testing
 
 ## 🔧Technologies you will use
 
