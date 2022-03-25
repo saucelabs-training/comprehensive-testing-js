@@ -70,8 +70,8 @@ Currently he is a solution architect at Sauce Labs, helping enterprise teams suc
 
 ## ⚙️ Setup
 
-The best and safest way to ensure that we all have the same environment is for us to use Gitpod for our workshop. However, if you understand
-how to configure node and nvm, you are free to setup the environment on your machine as well.
+The safest way to ensure that we all have the same environment is for us to [use Gitpod](#gitpod-setup) for our workshop. However, if you understand
+how to configure node, you are free to setup the environment on your machine as well.
 
 ---
 
