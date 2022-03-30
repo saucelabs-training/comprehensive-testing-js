@@ -7,7 +7,7 @@ tasks:
       gp sync-done install
     command: npm run start
   - init: gp sync-await install
-    command: npx cypress run --spec "**/sanity.js,**/**/solution.spec.js"
+    command: npx cypress run --spec "**/sanity.js,**/**/solution.spec.js" --browser chrome
 ports:
   - port: 5900
     onOpen: ignore
