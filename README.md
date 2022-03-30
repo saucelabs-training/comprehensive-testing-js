@@ -88,7 +88,7 @@ how to configure node, you are free to setup the environment on your machine as 
 - click the Fork in the upper right of the Github.
 - Give the repo a ⭐ or you can't participate in the workshop😝
 
-3. In the browser address bar, prepend the GitHub url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
+3. In the browser address bar, prepend the current GitHub url with `https://gitpod.io/#`
     * The resulting url should look as follows:
    
       > https://gitpod.io/#https://github.com/YOUR-USERNAME/comprehensive-testing-js
