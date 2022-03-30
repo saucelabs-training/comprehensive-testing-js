@@ -31,11 +31,11 @@ You will analyze risks and prevent those risks with functional testing, api test
 
 ## Table Of Contents
 
-- [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
+- [API Testing](./docs/API.md)
+- [E2E UI testing w/ Cypress](./docs/E2E-TESTS.md)
+- [Visual e2e testing](./docs/VISUAL.md)
 - [CICD](./my-react-app/docs/CICD.md)
-- [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
-- [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
-- [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
+- [Conclusions](./docs/CONCLUSIONS.md)
 
 ## Key
 

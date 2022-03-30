@@ -4,35 +4,33 @@
 
 ✅
 
-## 🧪Current Test Coverage
+[SUT](https://jsonplaceholder.cypress.io/)
 
-[Look here](TEST-COVERAGE.md)
+[Docs](https://jsonplaceholder.typicode.com/)
 
-[SUT](http://gh-users-search.netlify.app)
+## What is API Testing?
 
----
+<img src="https://tse1.mm.bing.net/th?id=OIP.ASpOoqkLWHODifb7T4f2twHaD4&pid=Api" alt="api-testing" width="500"/>
 
-## ❓How do we check to make sure that the app looks as expected on web and mobile?
+<img src="https://ryancraven.tech/wp-content/uploads/2020/05/commonAPIs-1.png" alt="common-requests" width="500"/>
 
----
+### Advantages of API tests
 
-<img src="./../../../graphics/visual-testing.png" alt="visual-testing" width="500"/>
+✅ Fast
 
-<img src="./../../../graphics/visual-workflow.jpeg" alt="visual-testing" width="500"/>
+✅ Reliable
 
-### Advantages of visual tests
+✅ Check business logic of app
 
-✅ Easier than e2e tests
+### 👀 Quick software under test overview
 
-✅ Validate an entire page in a single LOC
+[SUT](https://jsonplaceholder.typicode.com/)
 
-✅ Check how an app looks in different Browsers/Resolutions
+### 🏋️‍♀️ Let's try a GET
 
-✅ More stable than e2e tests
-
-✅ Can help reduce the size of e2e suite
-
-[Deeper discussion of visual testing](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
+1. Open your browser
+2. Open your Network tab of dev tools
+3. Go to `https://jsonplaceholder.typicode.com/comments` in browser
 
 ## Our tools
 
@@ -43,61 +41,6 @@ Next-gen browser and mobile automation test framework for Node.js
 ### [Screener](https://screener.io/)
 
 Automatically detect visual regressions across your UI
-
-## Set up a visual test
-
-follow along
-
-1. Create a new file `my-react-app/test/specs/exercise.spec.js`
-2. Paste the following code
-
-```javascript
-describe("My app", () => {
-  it("should look correct", async () => {
-    await browser.url("");
-    await browser.execute("/*@visual.init*/", "My React App");
-    await browser.execute("/*@visual.snapshot*/", "Home Page");
-
-    const result = await browser.execute("/*@visual.end*/");
-    expect(result.message).toBeNull();
-  });
-});
-```
-
-3. `cd testing-for-charity/my-react-app`
-4. `npm run test:visual`
-5. View your results in Screener.io
-
-[Let's fill out the Test coverage](./TEST-COVERAGE.md)
-
----
-
-### 🏋️‍♀️❓ Let's change our image, what tests should that break❓
-
----
-
-We're going to update the React image to something better. What tests should break?
-
-1. Drag n drop a new image to the `testing-for-charity/my-react-app/src`
-2. In `App.js`, Fix the path of the image to match your new image name `import logo from './mia.jpg';`
-3. Save all files
-4. Stop the React app `ctrl + C` in the server terminal
-5. Restart the app with `npm start`
-6. Rerun the visual tests with `npm run test:visual`
-7. Analyze the results in Screener dashboard
-
-## Add a step to CI
-
-In your `yml` add this code at the end
-
-```yml
-- name: Run visual tests 👁
-      run: |
-        cd testing-for-charity/my-react-app
-        npm run test:visual
-```
-
-Push the code to Github
 
 ## 📝Summary
 
