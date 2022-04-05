@@ -47,8 +47,6 @@ You will analyze risks and prevent those risks with functional testing, api test
 
 ## Your Instructor: Nikolay Advolodkin
 
-<img src="./../graphics/me-and-mia.jpg" alt="me" width="150"/>
-
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🌱 I’m currently working on [Sauce Bindings](https://github.com/saucelabs/sauce_bindings)
@@ -61,17 +59,38 @@ You will analyze risks and prevent those risks with functional testing, api test
   - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter for 🔥 Dev quotes](https://twitter.com/Nikolay_A00)
 
-## Your TA: Josh Grant
+## TA 1: Chris Eccleston
 
-<img src="./../graphics/josh-grant.jpeg" alt="josh" width="150"/>
-
-Josh Grant is a test automation professional who has worked in this space for nearly a decade. In that time he has worked on automation at all levels, in a variety of languages, frameworks and organizations.
-Currently he is a solution architect at Sauce Labs, helping enterprise teams succeed with their test automation. He’s based in Toronto, Ontario.
+## TA 2: Aleks Shineleva
 
 ## ⚙️ Setup
 
-The safest way to ensure that we all have the same environment is for us to [use Gitpod](#gitpod-setup) for our workshop. However, if you understand
-how to configure node, you are free to setup the environment on your machine as well.
+The safest way to ensure that we all have the same environment is for us to [use Gitpod](#gitpod-setup) for our workshop. However, if you are comfortable doing so, you are free to setup the environment on your machine as well.
+
+### Sign up for accounts
+
+1. Free [Sauce account](https://saucelabs.com/sign-up)
+2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **!Request ASAP before the workshop as it's a manual process to add users.** 
+
+### Get your username and api key
+
+1. Save your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+2. Save your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+   1. Need to sign up for [demo account before](https://saucelabs.com/demo-request-vt)
+
+🚨 **If you don't get an API key before the workshop, please use one of the keys below** 🚨
+
+SCREENER_API_KEY:
+
+`34c95634-56fc-446e-b68e-20530262e3f4`
+
+`fe5a0636-fde5-4209-a597-403a76f1b505`
+
+`6b3cc9f4-4578-413c-b5cc-ed7d1b417981`
+
+`6b3cc9f4-4578-413c-b5cc-ed7d1b417981`
+
+`8368adee-4463-4aa4-a441-6e6c58d67665`
 
 ---
 
@@ -94,11 +113,18 @@ how to configure node, you are free to setup the environment on your machine as 
       > https://gitpod.io/#https://github.com/YOUR-USERNAME/comprehensive-testing-js
    
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
-5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
-:information_source:&nbsp; You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+### Start the npm
 
-:information_source:&nbsp; You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+In your terminal
+
+```js
+npm run start
+```
+
+### 2. Set your env variables
+
+6. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
@@ -115,6 +141,8 @@ echo $SAUCE_USERNAME
 echo $SAUCE_ACCESS_KEY
 echo $SCREENER_API_KEY
 ```
+
+### 3. Set your env variables
 
 Run sanity tests
 
