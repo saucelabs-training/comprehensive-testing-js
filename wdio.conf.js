@@ -19,6 +19,7 @@ exports.config = {
             sauceConnect: true,
             sauceConnectOpts: {
                 noSslBumpDomains: 'all',
+                region: process.env.SC_REGION || 'us-west'
             },
         }]
     ],
@@ -94,28 +95,18 @@ exports.config = {
         // }
     ],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'debug',
-    // bail (default is 0 - don't bail, run all tests).
-    bail: 0,
-    baseUrl: 'http://localhost:3000',
-    //
-    // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
-    //
-    // Default timeout in milliseconds for request
-    // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
-    //
-    // Default request retries count
-    connectionRetryCount: 3,
-
-    framework: 'mocha',
-    reporters: ['spec'],
-    //
-    // Options to be passed to Mocha.
-    // See the full list at http://mochajs.org/
-    mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
-    }
+    logLevel: 'error',
+	bail: 0,
+	baseUrl: 'http://localhost:3000',
+	waitforTimeout: 10000,
+	connectionRetryTimeout: 120000,
+	connectionRetryCount: 3,
+	framework: 'mocha',
+	reporters: ['spec'],
+	mochaOpts: {
+		ui: 'bdd',
+		//set at least this timeout since visual snapshots can take up to 45 sec
+		//https://docs.saucelabs.com/visual/e2e-testing/setup/#useful-settings
+		timeout: 180000,
+	},
 }
