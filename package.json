@@ -14,7 +14,7 @@
     "cy:open": "cypress open",
     "cy:ci": "cypress run",
     "test:sanity:us": "wdio run ./wdio.conf.js",
-    "test:sanity:eu": "SC_REGION=eu-central REGION=eu wdio run ./wdio.conf.js",
+    "test:sanity:eu": "REGION=eu wdio run ./wdio.sanity.conf.js",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "test:sanity": "cypress run --spec **/sanity.js,**/**/solution.spec.js --browser chrome"
   },
