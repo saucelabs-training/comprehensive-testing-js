@@ -162,39 +162,17 @@ If your tests run in EU Datacenter
 npm run test:sanity:eu
 ```
 
-<br/>
-  <details>
-    <summary>
-      <strong>Click here</strong> to see an example console output.
-    </summary>
-
-
-        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.305 sec
-
-        Results :
-
-        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
-
-        [INFO] ------------------------------------------------------------------------
-        [INFO] BUILD SUCCESS
-        [INFO] ------------------------------------------------------------------------
-        [INFO] Total time:  56.063 s
-        [INFO] Finished at: 2021-11-03T16:03:20-04:00
-        [INFO] ------------------------------------------------------------------------
-
-  </details>
-
-<br/>
-
+ℹ️ Unfortunately visual e2e testing isn't currently supported in EU
 
 ### ✅👏Environment setup is complete if tests passed
 
 ## Stay to the end and win a prize!
 
-
 ---
 
-### 1. Install Node 14 LTS
+## Local setup
+
+### 1. Install Node LTS
 
 1.  Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
     - It should be just a single command to run in our terminal
@@ -208,23 +186,18 @@ npm run test:sanity:eu
       <strong>Click here</strong> to see an example output.
     </summary>
 
-        Downloading and installing node v14.16.1...
-        Downloading https://nodejs.org/dist/v14.16.1/node-v14.16.1-darwin-x64.tar.xz...
-        ######################################################################### 100.0%
-        Computing checksum with shasum -a 256
-        Checksums matched!
-        Now using node v14.16.1 (npm v6.14.12)
-        Creating default alias: default -> 14 (-> v14.16.1)
+        Downloading and installing node v16...
+        Downloading https://nodejs.org/dist/v16.13.2
 
   </details>
   <br/><br/>
 
-- Confirm node installation with `node --version` and seeing `v14.16.1` or similar
-- Confirm NVM is set to 14 for default by running the following commands:
+- Confirm node installation with `node --version` and seeing `v16.x` or similar
+- Confirm NVM is set to 16 for default by running the following commands:
 
 ```bash
 nvm list #will show all versions
-nvm use 14 #to use 14
+nvm use 16 #to use 16
 nvm alias default 16.14.x #to set it to the default
 ```
 
