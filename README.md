@@ -122,7 +122,7 @@ In your terminal
 npm run start
 ```
 
-you should see a new tab open with a simple application
+### ✅ A new tab open with a simple application should open
 
 ### Set your env variables
 
@@ -144,12 +144,22 @@ echo $SAUCE_ACCESS_KEY
 echo $SCREENER_API_KEY
 ```
 
+### ✅ Your values should come back as expected
+
 ### Run tests
 
 Run sanity tests
 
+If your tests run in US Datacenter
+
 ```bash
-mvn test -Dtest=SanityTest -X
+npm run test:sanity:us
+```
+
+If your tests run in EU Datacenter
+
+```bash
+npm run test:sanity:eu
 ```
 
 <br/>
