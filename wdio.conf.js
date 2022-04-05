@@ -1,20 +1,25 @@
 const visualOptions = {
     apiKey: process.env.SCREENER_API_KEY,
-    projectName: 'testing-for-good'
+    projectName: 'comprehensive-testing'
 };
 const sauceOptions = {
     username: process.env.SAUCE_USERNAME,
-    accesskey: process.env.SAUCE_ACCESS_KEY
+    accesskey: process.env.SAUCE_ACCESS_KEY,
+    extendedDebugging: true,
+	capturePerformance: true,
 };
 
 exports.config = {
     runner: 'local',
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    region: 'us',
+    region: process.env.REGION || 'us',
     services: [
         ['sauce', {
-            sauceConnect: true
+            sauceConnect: true,
+            sauceConnectOpts: {
+                noSslBumpDomains: 'all',
+            },
         }]
     ],
     specs: [
