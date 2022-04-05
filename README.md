@@ -96,9 +96,9 @@ SCREENER_API_KEY:
 
 ## Gitpod setup
 
-ℹ️ Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
+ℹ️ Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local environment.
 
-### 1.Fork the repo
+### Fork the repo
 
 1. Sign up for a free [Github account](https://github.com/)
 2. Fork this respository
@@ -114,7 +114,7 @@ SCREENER_API_KEY:
    
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
 
-### Start the npm
+### Start the app
 
 In your terminal
 
@@ -122,9 +122,11 @@ In your terminal
 npm run start
 ```
 
-### 2. Set your env variables
+you should see a new tab open with a simple application
 
-6. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
+### Set your env variables
+
+In a new terminal, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
@@ -142,7 +144,7 @@ echo $SAUCE_ACCESS_KEY
 echo $SCREENER_API_KEY
 ```
 
-### 3. Set your env variables
+### Run tests
 
 Run sanity tests
 
