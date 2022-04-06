@@ -124,6 +124,8 @@ npm run start
 
 ### ✅ A new tab open with a simple application should open
 
+ℹ️ Keep the app running, we will need it to run some sanity tests
+
 ### Set your env variables
 
 In a new terminal, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
@@ -166,8 +168,6 @@ npm run test:sanity:eu
 
 ### ✅👏Environment setup is complete if tests passed
 
-## Stay to the end and win a prize!
-
 ---
 
 ## Local setup
@@ -179,19 +179,6 @@ npm run test:sanity:eu
       - **!Don't forget to restart your terminal!**
     -  After installation, confirm install with `nvm --version`
 3.  Intall Node 16 with `nvm install --lts`
-
-  <br/>
-  <details>
-    <summary>
-      <strong>Click here</strong> to see an example output.
-    </summary>
-
-        Downloading and installing node v16...
-        Downloading https://nodejs.org/dist/v16.13.2
-
-  </details>
-  <br/><br/>
-
 - Confirm node installation with `node --version` and seeing `v16.x` or similar
 - Confirm NVM is set to 16 for default by running the following commands:
 
@@ -219,49 +206,18 @@ git clone URL_OF_YOUR_FORK
 
 `cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
 
-### 3.Install the app
+### 3.Follow the rest of the setup instructions
 
-```bash
-cd testing-for-charity/my-react-app
-npm install && npm start
-```
+Follow the [same setup instructions](#Start-the-app) for starting the app and running tests.
 
-<br/>
-<details>
-  <summary>
-    <strong>Click here</strong> to see an example output.
-  </summary>
+ℹ️ The main difference is that you will set environmenta variables by [following these instructions](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables) depending on your OS.
 
-  <code>
+ℹ️ Some individuals aren't allowed to set their environment variables on their machines (Employer policy). In that case, you can hardcode them by modifying
+* [3 visual keys](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.visual.conf.js#L2-L9)
+* [2 keys for functional tests](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.sanity.conf.js#L9-L10)
 
-    Compiled successfully!
-
-    You can now view my-react-app in the browser.
-
-      Local:            http://localhost:3000
-      On Your Network:  http://172.20.10.2:3000
-
-    Note that the development build is not optimized.
-    To create a production build, use npm run build.
-
-  </code>
-</details>
-
-<br/><br/>
-
-**Don't worry about fixing any warnings that may appear during `npm install`**
-
-Once the app is running, kill the server by executing `Ctrl + C` in command line. We don't need the app running right now.
+You will need to hardcode these values as we do exercises.
 
 ### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 
-#### ✅👏Congratulations, your environment is ready!
-
-### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
-
-Get your [Screener account](https://saucelabs.com/demo-request-vt)
-
-### 6.Set Your Sauce Labs Credentials
-
-- [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
-- [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
+#### ✅👏Congratulations, your local environment is ready!
