@@ -1,20 +1,19 @@
 const sauceOptions = {
-
     extendedDebugging: true,
 	capturePerformance: true,
-    region: process.env.REGION || 'us',
 };
 
 exports.config = {
     runner: 'local',
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
+    region: process.env.REGION || 'us',
     services: [
         ['sauce', {
             sauceConnect: true,
             sauceConnectOpts: {
                 noSslBumpDomains: 'all',
-                region: process.env.REGION || 'us-west'
+                region: process.env.SC_REGION || 'us-west'
             },
         }]
     ],
