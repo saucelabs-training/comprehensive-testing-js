@@ -204,7 +204,7 @@ git clone URL_OF_YOUR_FORK
 
 4. **Navigate to the directory of where you cloned your repo**
 
-`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
+`cd YOUR_FORK_DIR/comprehensive-testing-js`
 
 ### 3.Follow the rest of the setup instructions
 
