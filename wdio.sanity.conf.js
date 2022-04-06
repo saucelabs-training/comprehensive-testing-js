@@ -5,6 +5,7 @@ const sauceOptions = {
 
 exports.config = {
     runner: 'local',
+    // user,key,region must be here for wdio/sauce tests
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     region: process.env.REGION || 'us',

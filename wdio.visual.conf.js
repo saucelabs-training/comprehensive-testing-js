@@ -4,14 +4,15 @@ const visualOptions = {
     failOnNewStates: false
 };
 const sauceOptions = {
+    // user,key have to be here for visual
     username: process.env.SAUCE_USERNAME,
     accesskey: process.env.SAUCE_ACCESS_KEY,
     extendedDebugging: true,
 	capturePerformance: true,
-    region: process.env.REGION || 'us',
 };
 
 exports.config = {
+    region: process.env.REGION || 'us',
     runner: 'local',
     services: [
         ['sauce', {
@@ -23,7 +24,7 @@ exports.config = {
         }]
     ],
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/**/visual*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -53,18 +54,18 @@ exports.config = {
                 viewportSize: '1366x768'
             }
         },
-        {
-            browserName: 'safari',
-            platformName: 'macOS 10.15',
-            browserVersion: 'latest',
-            'sauce:options': {
-                ...sauceOptions,
-            },
-            'sauce:visual': {
-                ...visualOptions,
-                viewportSize: '1366x768'
-            }
-        },
+        // {
+        //     browserName: 'safari',
+        //     platformName: 'macOS 10.15',
+        //     browserVersion: 'latest',
+        //     'sauce:options': {
+        //         ...sauceOptions,
+        //     },
+        //     'sauce:visual': {
+        //         ...visualOptions,
+        //         viewportSize: '1366x768'
+        //     }
+        // },
         // // https://yesviz.com/iphones.php
         // // iphone12
         // {
