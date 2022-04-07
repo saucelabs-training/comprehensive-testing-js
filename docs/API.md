@@ -49,7 +49,7 @@
   });
 ```
 
-Run the tests w/ `npx cypress run`
+Run the tests w/ `npx cypress run --spec **/solution.spec.js`
 
 
 ## Our tools
@@ -69,3 +69,5 @@ Automatically detect visual regressions across your UI
 ✅We used WebdriverIO + Screener.io to write our visual e2e tests
 
 ## ⏭️[Let's make our testing more efficient with component tests](./COMPONENT-TESTS.md)
+
+🎁 Bonus exercises at the end of the `solution.spec.js`

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 context("Network Requests", () => {
-  const baseUrl = "https://jsonplaceholder.typicode.com";
+  const baseUrl = "https://jsonplaceholder.cypress.io";
 
   it("/comments returns 200 and 500 body length", () => {
     // https://on.cypress.io/request
@@ -12,44 +12,14 @@ context("Network Requests", () => {
       expect(response.body).to.have.property("length").and.be.oneOf([500,501]);
     });
   });
-
-  it("cy.request() with query parameters", () => {
-    // will execute request
-    // https://jsonplaceholder.cypress.io/comments?postId=1&id=3
-    cy.request({
-      url: "https://jsonplaceholder.cypress.io/comments",
-      qs: {
-        postId: 1,
-        id: 3,
-      },
-    })
-      .its("body")
-      .should("be.an", "array")
-      .and("have.length", 1)
-      .its("0") // yields first element of the array
-      .should("contain", {
-        postId: 1,
-        id: 3,
-      });
-  });
-
-  it("cy.request() - pass result to the second request", () => {
+  
+  it("Can create new user on /posts", () => {
     // first, let's find out the userId of the first user we have
-    cy.request("https://jsonplaceholder.cypress.io/users?_limit=1")
-      .its("body") // yields the response object
-      .its("0") // yields the first element of the returned list
-      // the above two commands its('body').its('0')
-      // can be written as its('body.0')
-      // if you do not care about TypeScript checks
-      .then((user) => {
-        expect(user).property("id").to.be.a("number");
-        // make a new post on behalf of the user
-        cy.request("POST", "https://jsonplaceholder.cypress.io/posts", {
-          userId: user.id,
-          title: "Cypress Test Runner",
-          body: "Fast, easy and reliable testing for anything that runs in a browser.",
-        });
-      })
+    cy.request("POST", `${baseUrl}/posts`, {
+      userId: 11,
+      title: "Cypress Test Runner",
+      body: "new body"
+    })
       // note that the value here is the returned value of the 2nd request
       // which is the new post object
       .then((response) => {
@@ -156,5 +126,23 @@ context("Network Requests", () => {
 
     // our 404 statusCode logic in scripts.js executed
     cy.get(".network-put-comment").should("contain", message);
+  });
+
+  it.only("GET /comments with query parameters", () => {
+    cy.request({
+      url: `${baseUrl}/comments`,
+      qs: {
+        postId: 1,
+        id: 3,
+      },
+    })
+      .its("body")
+      .should("be.an", "array")
+      .and("have.length", 1)
+      .its("0") // yields first element of the array
+      .should("contain", {
+        postId: 1,
+        id: 3,
+      });
   });
 });
