@@ -38,7 +38,7 @@
 - Add the following code inside of `context(){}`
 
 ```js
-it("/comments returns 200 and 500 body length", () => {
+it("comments returns 200 and 500 body length", () => {
   // https://on.cypress.io/request
   cy.request(`${baseUrl}/comments`).should((response) => {
     expect(response.status).to.eq(200);
@@ -49,7 +49,7 @@ it("/comments returns 200 and 500 body length", () => {
 });
 ```
 
-Run the tests w/ `npx cypress run --spec **/solution.spec.js`
+Run the tests w/ `npx cypress run --spec **/exercise.spec.js`
 
 ## Our tools
 
