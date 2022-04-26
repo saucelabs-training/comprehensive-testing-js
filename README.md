@@ -47,6 +47,8 @@ You will analyze risks and prevent those risks with functional testing, api test
 
 ## Your Instructor: Nikolay Advolodkin
 
+<img src="public/images/family.jpg" alt="api-testing" width="500"/>
+
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🌱 I’m currently working on [Sauce Bindings](https://github.com/saucelabs/sauce_bindings)
@@ -70,7 +72,7 @@ The safest way to ensure that we all have the same environment is for us to [use
 ### Sign up for accounts
 
 1. Free [Sauce account](https://saucelabs.com/sign-up)
-2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **!Request ASAP before the workshop as it's a manual process to add users.** 
+2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **!Request ASAP before the workshop as it's a manual process to add users.**
 
 ### Get your username and api key
 
@@ -108,11 +110,12 @@ SCREENER_API_KEY:
 - Give the repo a ⭐ or you can't participate in the workshop😝
 
 3. In the browser address bar, prepend the current GitHub url with `https://gitpod.io/#`
-    * The resulting url should look as follows:
-   
-      > https://gitpod.io/#https://github.com/YOUR-USERNAME/comprehensive-testing-js
-   
-4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
+
+   - The resulting url should look as follows:
+
+     > https://gitpod.io/#https://github.com/YOUR-USERNAME/comprehensive-testing-js
+
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier
 
 ### Start the app
 
@@ -177,8 +180,9 @@ npm run test:sanity:eu
 1.  Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
     - It should be just a single command to run in our terminal
       - **!Don't forget to restart your terminal!**
-    -  After installation, confirm install with `nvm --version`
-3.  Intall Node 16 with `nvm install --lts`
+    - After installation, confirm install with `nvm --version`
+2.  Intall Node 16 with `nvm install --lts`
+
 - Confirm node installation with `node --version` and seeing `v16.x` or similar
 - Confirm NVM is set to 16 for default by running the following commands:
 
@@ -213,8 +217,9 @@ Follow the [same setup instructions](#Start-the-app) for starting the app and ru
 ℹ️ The main difference is that you will set environmenta variables by [following these instructions](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables) depending on your OS.
 
 ℹ️ Some individuals aren't allowed to set their environment variables on their machines (Employer policy). In that case, you can hardcode them by modifying
-* [3 visual keys](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.visual.conf.js#L2-L9)
-* [2 keys for functional tests](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.sanity.conf.js#L9-L10)
+
+- [3 visual keys](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.visual.conf.js#L2-L9)
+- [2 keys for functional tests](https://github.com/saucelabs-training/comprehensive-testing-js/blob/9309d16a9cf56dd14607b9e4c478f3b2f698e9d8/wdio.sanity.conf.js#L9-L10)
 
 You will need to hardcode these values as we do exercises.
 

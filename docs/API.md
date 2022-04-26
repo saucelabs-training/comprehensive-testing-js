@@ -6,7 +6,7 @@
 
 [SUT](https://jsonplaceholder.cypress.io/)
 
-[Docs](https://jsonplaceholder.typicode.com/guide/)
+[Guide to API](https://jsonplaceholder.typicode.com/guide/)
 
 ## What is API Testing?
 
@@ -49,24 +49,47 @@ it("comments returns 200 and 500 body length", () => {
 });
 ```
 
-Run the tests w/ `npx cypress run --spec **/exercise.spec.js`
+Run the tests
 
-## Our tools
+`npx cypress run --spec **/exercise.spec.js`
 
-### [WebdriverIO](https://webdriver.io/)
+### 🏋️‍♀️ Let's try a `POST`
 
-Next-gen browser and mobile automation test framework for Node.js
+> Use POST when you want to add a child resource under resources collection
 
-### [Screener](https://screener.io/)
+1. In your browser go to (API Fortress)[https://app.saucelabs.com/api-testing]
+2. Use this URL for your POST `https://jsonplaceholder.typicode.com/posts`
+3. Use this body
 
-Automatically detect visual regressions across your UI
+```json
+{
+  "userId": 11,
+  "title": "any title you want",
+  "body": "any body"
+}
+```
+
+4. Send the request
+
+### 🏋️‍♀️ Let's automate a `POST`
+
+- Go to `cypress/integration/network/exercise.spec.js`
+- Follow instructions for test `it("Can create new user on /posts", () => {`
+- Run the tests
+
+`npx cypress run --spec **/exercise.spec.js`
 
 ## 📝Summary
 
-✅Visual e2e testing is a simple and efficient way to ensure visual consistency cross-platform and cross-OS
+✅
 
-✅We used WebdriverIO + Screener.io to write our visual e2e tests
+✅
 
 ## ⏭️[Let's make our testing more efficient with component tests](./COMPONENT-TESTS.md)
 
 🎁 Bonus exercises at the end of the `solution.spec.js`
+
+## Expand your learning
+
+[What is REST blog post](https://restfulapi.net/)
+[API testing in JavaScript](https://testautomationu.applitools.com/javascript-api-testing/)

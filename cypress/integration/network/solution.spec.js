@@ -14,19 +14,21 @@ context("Network Requests", () => {
   });
 
   it("Can create new user on /posts", () => {
-    // first, let's find out the userId of the first user we have
+    // resource will not be really updated on the server but it will be faked as if
     cy.request("POST", `${baseUrl}/posts`, {
       userId: 11,
-      title: "Cypress Test Runner",
+      title: "Cypress Test",
       body: "new body",
     })
       // note that the value here is the returned value of the 2nd request
       // which is the new post object
       .then((response) => {
         console.log(response);
+        // expect the response status to be 201
         expect(response).property("status").to.equal(201); // new entity created
-        expect(response).property("body").to.contain({
-          title: "Cypress Test Runner",
+        // expect the response body to contain the title = "Cypress Test"
+        expect(response.body).to.contain({
+          title: "Cypress Test",
         });
       });
   });
