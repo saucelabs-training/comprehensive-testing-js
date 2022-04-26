@@ -128,7 +128,7 @@ context("Network Requests", () => {
     cy.get(".network-put-comment").should("contain", message);
   });
 
-  it.only("GET /comments with query parameters", () => {
+  it("GET /comments with query parameters", () => {
     cy.request({
       url: `${baseUrl}/comments`,
       qs: {

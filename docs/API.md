@@ -6,7 +6,7 @@
 
 [SUT](https://jsonplaceholder.cypress.io/)
 
-[Docs](https://jsonplaceholder.typicode.com/)
+[Docs](https://jsonplaceholder.typicode.com/guide/)
 
 ## What is API Testing?
 
@@ -34,23 +34,22 @@
 
 ### 🏋️‍♀️ Let's automate a `GET`
 
-* Go to `cypress/integration/network/exercise.spec.js`
-* Add the following code inside of `context(){}`
+- Go to `cypress/integration/network/exercise.spec.js`
+- Add the following code inside of `context(){}`
 
 ```js
-  it("/comments returns 200 and 500 body length", () => {
-    // https://on.cypress.io/request
-    cy.request(`${baseUrl}/comments`).should((response) => {
-      expect(response.status).to.eq(200);
-      // the server sometimes gets an extra comment posted from another machine
-      // which gets returned as 1 extra object
-      expect(response.body).to.have.property("length").and.be.oneOf([500,501]);
-    });
+it("/comments returns 200 and 500 body length", () => {
+  // https://on.cypress.io/request
+  cy.request(`${baseUrl}/comments`).should((response) => {
+    expect(response.status).to.eq(200);
+    // the server sometimes gets an extra comment posted from another machine
+    // which gets returned as 1 extra object
+    expect(response.body).to.have.property("length").and.be.oneOf([500, 501]);
   });
+});
 ```
 
 Run the tests w/ `npx cypress run --spec **/solution.spec.js`
-
 
 ## Our tools
 

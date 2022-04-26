@@ -30,4 +30,22 @@ context("Network Requests", () => {
         });
       });
   });
+
+  it("Can update posts", () => {
+    // a PUT is used to update an existing entity
+    cy.request("PUT", `${baseUrl}/posts/1`, {
+      id: 1,
+      userId: 11,
+      title: "foo",
+      body: "bar",
+    }).then((response) => {
+      console.log(response);
+      expect(response).property("status").to.equal(200);
+      // same as expect(response).property("statusText")
+      expect(response.statusText).to.equal("OK");
+      expect(response.body).to.contain({
+        title: "foo",
+      });
+    });
+  });
 });
