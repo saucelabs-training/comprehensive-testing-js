@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './mia.jpg';
+import logo from './mia.png';
 
 function App() {
   return (
