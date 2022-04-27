@@ -32,3 +32,11 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 👇👇👇
 
 [Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-charity) 100% of the donations go to the cause.
+
+## Extra resources
+
+---
+
+[What is REST blog post](https://restfulapi.net/)
+
+[API testing in JavaScript tutorial](https://testautomationu.applitools.com/javascript-api-testing/)

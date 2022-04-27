@@ -226,3 +226,9 @@ You will need to hardcode these values as we do exercises.
 ### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 
 #### ✅👏Congratulations, your local environment is ready!
+
+## Prizes
+
+Prizes will be given away for participation
+
+At the end, one lucky winner will get a backpack

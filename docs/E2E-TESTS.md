@@ -14,18 +14,23 @@ Open application at http://localhost:3000/
 
 ## 🧪Our Testing Strategy
 
+[Software under test](http://localhost:3000/)
+
 [Look here](TEST-COVERAGE.md)
 
-## What is the most basic test that we can write for our application?
+---
 
-- How about a functional browser test sure that our app renders?
+## ❓What is the most basic test that we can write for our application?
+
+---
 
 ## Cypress Overview
 
 "Fast, easy and reliable testing for anything that runs in a browser."([Cypress.io](https://www.cypress.io/))
 
+In new terminal, without stopping the web app
+
 ```bash
-cd testing-for-charity/my-react-app
 npx cypress open
 ```
 
@@ -57,9 +62,9 @@ npx cypress open
 Here's an e2e test to validate that a link works
 
 ```js
-it("should click link", () => {
-  cy.visit("/");
-  cy.get(".App-link").click().url().should("contain", "ultimateqa.com");
+it('should click link', () => {
+  cy.visit('/');
+  cy.get('.App-link').click().url().should('contain', 'ultimateqa.com');
 });
 ```
 
@@ -69,8 +74,18 @@ it("should click link", () => {
 
 ---
 
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see answer.
+    </summary>
+
 1. We should never need to test that a link is clickable, this is the browser's native behavior
 2. We should never need to test that a link opens a new tab
+
+  </details>
+
+</br>
 
 ### 🏋️‍♀️Write a test to ensure that the link will go to the correct location
 
@@ -101,9 +116,15 @@ it("should click link", () => {
 
 ---
 
-### ❓What are the disadvantages of functional UI tests?
+### ❓What are some challenges of functional UI tests?
 
 ---
+
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see answer.
+    </summary>
 
 1. Need a browser
 2. Need a server
@@ -112,18 +133,45 @@ it("should click link", () => {
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
+  </details>
+
+</br>
+
 ---
 
 ### ❓Can we test the same thing more efficiently❓
 
 ---
 
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see answer.
+    </summary>
+
+Using component tests
+
+[How to run a component test](https://youtu.be/VQLf1pLWDjc?t=166) followed by
+[How to create a test for a link](https://youtu.be/VQLf1pLWDjc?t=821)
+
+[Examples of using component tests](https://github.com/nadvolod/testing-best-practices#testing-a-button)
+
+  </details>
+
+</br>
+
 ## 📝Summary
 
-✅E2E UI testing with Cypress allows us to do functional testing of the web app
+✅ E2E UI testing with Cypress allows us to do functional testing of the web app
 
-✅However, it's inneficient and there are better alternatives
+✅ We can test a link by checking the `href` attribute
+
+✅ We can test that a url opens by checking that `target='_blank'`
 
 ## ⏭️Wouldn't it be great to have this tested automatically through CI?
 
 [Let's setup up CI](./CICD.md)
+
+## 🧠Expand your knowledge
+
+[Building and testing web applications tutorials](https://www.youtube.com/playlist?list=PLSRQwlkmpdj5ak1Rxahdo6mguhbcCOePR)

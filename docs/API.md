@@ -38,13 +38,13 @@
 - Add the following code inside of `context(){}`
 
 ```js
-it("comments returns 200 and 500 body length", () => {
+it('comments returns 200 and 500 body length', () => {
   // https://on.cypress.io/request
   cy.request(`${baseUrl}/comments`).should((response) => {
     expect(response.status).to.eq(200);
     // the server sometimes gets an extra comment posted from another machine
     // which gets returned as 1 extra object
-    expect(response.body).to.have.property("length").and.be.oneOf([500, 501]);
+    expect(response.body).to.have.property('length').and.be.oneOf([500, 501]);
   });
 });
 ```
@@ -122,7 +122,7 @@ Run the tests
 
 🎁 Bonus exercises in `bonus.spec.js`
 
-## Expand your learning
+## Expand your knowledge
 
 [What is REST blog post](https://restfulapi.net/)
 

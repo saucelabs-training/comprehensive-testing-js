@@ -178,11 +178,11 @@
     // disallow declaration of variables already declared in the outer scope
     "no-shadow-restricted-names": 1,
     // disallow shadowing of names such as arguments
-    "no-undef": 2,
+    "no-undef": 0,
     // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undefined": 0,
     // disallow use of undefined variable (off by default)
-    "no-undef-init": 1,
+    "no-undef-init": 0,
     // disallow use of undefined when initializing variables
     "no-unused-vars": [
       1,
