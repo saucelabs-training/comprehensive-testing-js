@@ -79,17 +79,51 @@ Run the tests
 
 `npx cypress run --spec **/exercise.spec.js`
 
+### 🏋️‍♀️ Let's try a `PUT`
+
+> Use PUT when we want to modify a singular resource that is already a part of resources collection
+
+1. In your browser go to (API Fortress)[https://app.saucelabs.com/api-testing]
+2. Use this URL for your PUT `https://jsonplaceholder.typicode.com/posts/1`
+3. Use this body
+
+```json
+{
+  "id": 11,
+  "title": "using a PUT",
+  "body": "any body",
+  "userId": 1
+}
+```
+
+4. Send the request
+
+ℹ️ resource will not be really updated on the server but it will be faked as if
+
+### 🏋️‍♀️ Let's automate a `PUT`
+
+- Go to `cypress/integration/network/exercise.spec.js`
+- Implement test `it("Can update posts")` by following instructions
+- Run the tests
+
+`npx cypress run --spec **/exercise.spec.js`
+
 ## 📝Summary
 
-✅
+✅ Use GET requests to retrieve resource representation/information only
 
-✅
+✅ Use POST when you want to add a child resource under resources collection
 
-## ⏭️[Let's make our testing more efficient with component tests](./COMPONENT-TESTS.md)
+✅ Use PUT when we want to modify a singular resource that is already a part of resources collection
 
-🎁 Bonus exercises at the end of the `solution.spec.js`
+✅ Use an HTTP client like API Fortress or Postman to perform non-GET operations
+
+## ⏭️[Let's test through the UI](./E2E-TESTS.md)
+
+🎁 Bonus exercises in `bonus.spec.js`
 
 ## Expand your learning
 
 [What is REST blog post](https://restfulapi.net/)
-[API testing in JavaScript](https://testautomationu.applitools.com/javascript-api-testing/)
+
+[API testing in JavaScript tutorial](https://testautomationu.applitools.com/javascript-api-testing/)

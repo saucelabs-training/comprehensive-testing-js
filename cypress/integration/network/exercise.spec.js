@@ -17,4 +17,19 @@ context("Network Requests", () => {
         // TODO expect the response body to contain the title = "Cypress Test"
       });
   });
+
+  it("Can update posts", () => {
+    // a PUT is used to update an existing entity
+    //TODO what method should be used in cy.request()?
+    cy.request("HELLO", `${baseUrl}/posts/1`, {
+      id: 1,
+      userId: 11,
+      title: "foo",
+      body: "bar",
+    }).then((response) => {
+      //TODO expect response.status to equal what status code?
+      //TODO expect response.statusText to equal what string?
+      //TODO expect response.body to contain what title?
+    });
+  });
 });
