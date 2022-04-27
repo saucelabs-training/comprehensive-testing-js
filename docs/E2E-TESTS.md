@@ -168,9 +168,7 @@ Using component tests
 
 ✅ We can test that a url opens by checking that `target='_blank'`
 
-## ⏭️Wouldn't it be great to have this tested automatically through CI?
-
-[Let's setup up CI](./CICD.md)
+## ⏭️ [Let's continue to expand our coverage](VISUAL.md)
 
 ## 🧠Expand your knowledge
 
