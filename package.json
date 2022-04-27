@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,6 +48,7 @@
     "@wdio/spec-reporter": "^7.13.0",
     "chromedriver": "^99.0.0",
     "cypress": "^9.6.0",
+    "eslint": "^8.14.0",
     "react-scripts": "latest",
     "wdio-chromedriver-service": "^7.2.2"
   }

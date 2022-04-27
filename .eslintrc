@@ -3,16 +3,17 @@
     "browser": true,
     "node": true
   },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    }
-  },
+  // parser not working w/ react
+  // "parser": "babel-eslint",
+  // "parserOptions": {
+  //   "ecmaVersion": 6,
+  //   "sourceType": "module",
+  //   "ecmaFeatures": {
+  //     "jsx": true,
+  //     "modules": true,
+  //     "experimentalObjectRestSpread": true
+  //   }
+  // },
   "plugins": [],
   "extends": ["eslint:recommended"],
   "rules": {
