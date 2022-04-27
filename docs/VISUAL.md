@@ -6,6 +6,12 @@
 
 ✅How to implement visual e2e testing for a web app
 
+---
+
+## ❓Who has done visual testing?
+
+---
+
 ## 🧪Current Test Coverage
 
 [Look here](TEST-COVERAGE.md)
@@ -40,11 +46,11 @@ Next-gen browser and mobile automation test framework for Node.js
 
 Automatically detect visual regressions across your UI
 
-## Set up a visual test
+## 🏋️‍♀️Set up a visual test
 
 follow along
 
-1. Create a new file `my-react-app/test/specs/exercise.spec.js`
+1. Go to file `/test/specs/visual.exercise.spec.js`
 2. Paste the following code
 
 ```javascript
@@ -60,9 +66,8 @@ describe('My app', () => {
 });
 ```
 
-3. `cd testing-for-charity/my-react-app`
-4. `npm run test:visual`
-5. View your results in Screener.io
+3. In your terminal `npm run test:visual`
+4. View the execution in Saucelabs.com
 
 [Let's fill out the Test coverage](./TEST-COVERAGE.md)
 
@@ -74,26 +79,18 @@ describe('My app', () => {
 
 We're going to update the React image to something better. What tests should break?
 
-1. Drag n drop a new image to the `testing-for-charity/my-react-app/src`
+1. Drag'n drop a new image to the `/src` folder
 2. In `App.js`, Fix the path of the image to match your new image name `import logo from './mia.jpg';`
 3. Save all files
 4. Stop the React app `ctrl + C` in the server terminal
 5. Restart the app with `npm start`
 6. Rerun the visual tests with `npm run test:visual`
-7. Analyze the results in Screener dashboard
+7. Notice the results in your terminal
 
-## Add a step to CI
+## 🏋️‍♀️ How can you make the tests also run on Safari desktop and Safari mobile resolutions?
 
-In your `yml` add this code at the end
-
-```yml
-- name: Run visual tests 👁
-      run: |
-        cd testing-for-charity/my-react-app
-        npm run test:visual
-```
-
-Push the code to Github
+1. Do it
+2. Rerun visual tests `npm run test:visual`
 
 ## 📝Summary
 
@@ -101,4 +98,4 @@ Push the code to Github
 
 ✅We used WebdriverIO + Screener.io to write our visual e2e tests
 
-## ⏭️[Let's make our testing more efficient with component tests](./COMPONENT-TESTS.md)
+## ⏭️[Let's make our tests run in CI](./CICD.md)

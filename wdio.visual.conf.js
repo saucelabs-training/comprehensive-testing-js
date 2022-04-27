@@ -56,30 +56,30 @@ exports.config = {
       },
     },
     // {
-    //     browserName: 'safari',
-    //     platformName: 'macOS 10.15',
-    //     browserVersion: 'latest',
-    //     'sauce:options': {
-    //         ...sauceOptions,
-    //     },
-    //     'sauce:visual': {
-    //         ...visualOptions,
-    //         viewportSize: '1366x768'
-    //     }
+    //   browserName: 'safari',
+    //   platformName: 'macOS 10.15',
+    //   browserVersion: 'latest',
+    //   'sauce:options': {
+    //     ...sauceOptions,
+    //   },
+    //   'sauce:visual': {
+    //     ...visualOptions,
+    //     viewportSize: '1366x768',
+    //   },
     // },
     // // https://yesviz.com/iphones.php
     // // iphone12
     // {
-    //     browserName: 'safari',
-    //     platformName: 'macOS 10.15',
-    //     browserVersion: 'latest',
-    //     'sauce:options': {
-    //         ...sauceOptions,
-    //     },
-    //     'sauce:visual': {
-    //         ...visualOptions,
-    //         viewportSize: '390x844'
-    //     }
+    //   browserName: 'safari',
+    //   platformName: 'macOS 10.15',
+    //   browserVersion: 'latest',
+    //   'sauce:options': {
+    //     ...sauceOptions,
+    //   },
+    //   'sauce:visual': {
+    //     ...visualOptions,
+    //     viewportSize: '390x844',
+    //   },
     // },
     // //12 pro max
     // {
