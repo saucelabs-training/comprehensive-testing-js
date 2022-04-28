@@ -14,6 +14,8 @@ const sauceOptions = {
 exports.config = {
   region: process.env.REGION || 'us',
   runner: 'local',
+  user: process.env.SAUCE_USERNAME,
+  key: process.env.SAUCE_ACCESS_KEY,
   services: [
     [
       'sauce',
@@ -26,7 +28,7 @@ exports.config = {
       },
     ],
   ],
-  specs: ['./test/specs/**/visual*.js'],
+  specs: ['./test/specs/**/visual.exercise*.js'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
