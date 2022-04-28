@@ -37,6 +37,14 @@ You will analyze risks and prevent those risks with functional testing, api test
 - [CICD](./my-react-app/docs/CICD.md)
 - [Conclusions](./docs/CONCLUSIONS.md)
 
+## Testing for Good
+
+[#testing4good](https://twitter.com/hashtag/Testing4Good)
+
+Net proceeds from this workshop are donated to Ecosia's Trees that Empower Women! Let's learn together and make the world better together!
+
+<img width="500" height="400" alt="Ecosia" src="https://user-images.githubusercontent.com/2136245/165755056-82ef47b0-df56-497e-a546-8792a5227ffd.png">
+
 ## Key
 
 💡 this is a tip
