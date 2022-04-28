@@ -72,7 +72,7 @@ The safest way to ensure that we all have the same environment is for us to [use
 ### Sign up for accounts
 
 1. Free [Sauce account](https://saucelabs.com/sign-up)
-2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **!Request ASAP before the workshop as it's a manual process to add users.**
+2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **It's a manual process and likely you won't get on time, it's okay, I created public API keys below 👇.**
 
 ### Get your username and api key
 
