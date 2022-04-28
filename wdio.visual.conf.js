@@ -28,7 +28,7 @@ exports.config = {
       },
     ],
   ],
-  specs: ['./test/specs/**/visual.exercise*.js'],
+  specs: ['./test/specs/**/visual*.js'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
