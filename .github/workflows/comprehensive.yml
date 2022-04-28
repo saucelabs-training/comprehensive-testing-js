@@ -6,16 +6,8 @@ env:
 
 on:
   push:
-    # Only trigger if files in this path changed
-    paths:
-      # Don't run on Markdown changes
-      - '!**.md'
     branches: [main]
   pull_request:
-    # Only trigger if files in this path changed
-    paths:
-      # Don't run on Markdown changes
-      - '!**.md'
     branches: [main]
 
 jobs:
