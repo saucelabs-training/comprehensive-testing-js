@@ -17,6 +17,7 @@
     "test:sanity:us": "wdio run ./wdio.visual.conf.js",
     "test:sanity:eu": "REGION=eu npx wdio run ./wdio.sanity.conf.js",
     "test:visual": "wdio run ./wdio.visual.conf.js",
+    "test:visual:ci": "wdio run ./wdio.visual.conf.js --logLevel debug",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "test:sanity": "cypress run --spec **/sanity.js,**/**/solution.spec.js --browser chrome"
   },

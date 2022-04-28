@@ -42,4 +42,4 @@ jobs:
           npm run cy:ci
       - name: Run visual tests 👁
         run: |
-          npm run test:visual
+          npm run test:visual:ci
