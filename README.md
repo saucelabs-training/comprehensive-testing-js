@@ -216,11 +216,27 @@ git clone URL_OF_YOUR_FORK
 
 4. **Navigate to the directory of where you cloned your repo**
 
-`cd YOUR_FORK_DIR/comprehensive-testing-js`
+```bash
+cd YOUR_FORK_DIR/comprehensive-testing-js
+```
 
-### 3.Follow the rest of the setup instructions
+### 3. Install dependencies and start the application
 
-Follow the [same setup instructions](#Start-the-app) for starting the app and running tests.
+- While inside your 'comprehensive-testing-js' directory, run the following command to install all dependencies
+
+```bash
+npm install
+```
+
+- After the dependency installation has completed, start the application by running the following:
+
+```bash
+npm run start
+```
+
+### 4.Follow the rest of the setup instructions
+
+Follow the [same setup instructions](#Run-tests) running tests.
 
 ℹ️ The main difference is that you will set environmenta variables by [following these instructions](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables) depending on your OS.
 
@@ -231,7 +247,7 @@ Follow the [same setup instructions](#Start-the-app) for starting the app and ru
 
 You will need to hardcode these values as we do exercises.
 
-### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
+### 5.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 
 #### ✅👏Congratulations, your local environment is ready!
 
