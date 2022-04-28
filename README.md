@@ -228,7 +228,7 @@ npm run start
 
 ### 4.Follow the rest of the setup instructions
 
-Follow the [same setup instructions](#Run-tests) running tests.
+Follow the [same steps](#Run-tests) for running tests.
 
 ℹ️ The main difference is that you will set environmenta variables by [following these instructions](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables) depending on your OS.
 
