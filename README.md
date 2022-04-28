@@ -125,15 +125,7 @@ SCREENER_API_KEY:
 
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier
 
-### Start the app
-
-In your terminal
-
-```js
-npm run start
-```
-
-### ✅ A new tab open with a simple application should open
+### ✅ A new tab open with a simple ReactJS application should open
 
 ℹ️ Keep the app running, we will need it to run some sanity tests
 
