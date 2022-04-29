@@ -1,6 +1,6 @@
 const visualOptions = {
   apiKey: process.env.SCREENER_API_KEY,
-  projectName: 'comprehensive-testing',
+  projectName: 'comprehensive-testing2',
   failOnNewStates: false,
 };
 const sauceOptions = {
