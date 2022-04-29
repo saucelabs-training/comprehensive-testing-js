@@ -167,8 +167,6 @@ If your tests run in EU Datacenter
 npm run test:sanity:eu
 ```
 
-ℹ️ Unfortunately visual e2e testing isn't currently supported in EU
-
 ### ✅👏Environment setup is complete if tests passed
 
 ---
