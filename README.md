@@ -243,6 +243,6 @@ You will need to hardcode these values as we do exercises.
 
 ## Prizes
 
-Prizes will be given away for participation
+Prizes will be given away for participation (tshirts, stickers...)
 
-At the end, one lucky winner will get a backpack
+At the end, one lucky winner will get a backpack!
