@@ -40,12 +40,12 @@ jobs:
       - name: Run functional UI tests 🖥
         run: |
           npm run cy:ci
-      - name: Run visual tests 👁
-        run: |
-          npm run test:visual:ci
       - name: Run sanity US tests
         run: |
           npm run test:sanity:us
       - name: Run sanity EU tests
         run: |
           npm run test:sanity:eu
+      - name: Run visual tests 👁
+        run: |
+          npm run test:visual:ci
