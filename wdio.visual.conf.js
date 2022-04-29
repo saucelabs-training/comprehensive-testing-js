@@ -23,7 +23,7 @@ exports.config = {
         sauceConnect: true,
         sauceConnectOpts: {
           noSslBumpDomains: 'all',
-          region: process.env.REGION || 'us-west',
+          // region: process.env.REGION || 'us-west',
         },
       },
     ],

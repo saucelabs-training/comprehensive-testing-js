@@ -14,7 +14,7 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:ci": "cypress run --spec **/*solution.spec.js",
-    "test:sanity:us": "wdio run ./wdio.visual.conf.js",
+    "test:sanity:us": "wdio run ./wdio.sanity.conf.js",
     "test:sanity:eu": "REGION=eu npx wdio run ./wdio.sanity.conf.js",
     "test:visual": "wdio run ./wdio.visual.conf.js",
     "test:visual:ci": "wdio run ./wdio.visual.conf.js --logLevel debug",
