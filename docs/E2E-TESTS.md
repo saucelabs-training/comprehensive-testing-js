@@ -6,11 +6,13 @@
 
 ## ⚙️ Setup
 
-1. Stop all servers from previous session (`Ctrl + C` everything)
+Check if you have an app running on `http://localhost:3000/`. If so, you are ready.
+
+If not, then
+
 2. Open a terminal at the same place as the `package.json`
 3. `npm start` to start the web app
-
-Open application at http://localhost:3000/
+4. Open application at http://localhost:3000/
 
 ## 🧪Our Testing Strategy
 
