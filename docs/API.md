@@ -1,8 +1,12 @@
 # API testing
 
-## 🧠You will learn
+## 🧠 You will learn
 
-✅
+✅ How to do API testing
+
+✅ Common API methods
+
+✅ API automation
 
 [SUT](https://jsonplaceholder.cypress.io/)
 
