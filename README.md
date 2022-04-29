@@ -246,3 +246,12 @@ You will need to hardcode these values as we do exercises.
 Prizes will be given away for participation (tshirts, stickers...)
 
 At the end, one lucky winner will get a backpack!
+
+## Rules of engagement
+
+<img src="https://media.giphy.com/media/CB26wRVi3B9T2/giphy.gif" alt="api-testing" width="500"/>
+
+- I'm here to serve you, your education, and your experience
+- Be kind, respectful, no judgment
+- Have fun
+
