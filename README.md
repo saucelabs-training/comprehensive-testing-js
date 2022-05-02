@@ -80,13 +80,14 @@ The safest way to ensure that we all have the same environment is for us to [use
 ### Sign up for accounts
 
 1. Free [Sauce account](https://saucelabs.com/sign-up)
-2. Request [Demo Screener account](https://saucelabs.com/demo-request-vt). **It's a manual process and likely you won't get on time, it's okay, I created public API keys below 👇.**
 
 ### Get your username and api key
 
 1. Save your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
-2. Save your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
-   1. Need to sign up for [demo account before](https://saucelabs.com/demo-request-vt)
+
+ℹ️ If you have a Screener.io account then do the step below. Otherwise, just copy one of the demo API Keys.
+  - Save your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+     - Need to sign up for [demo account before](https://saucelabs.com/demo-request-vt)
 
 🚨 **If you don't get an API key before the workshop, please use one of the keys below** 🚨
 
