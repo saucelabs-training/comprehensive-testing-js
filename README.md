@@ -136,7 +136,11 @@ In a new terminal, run the following commands in that Terminal to set your `SAUC
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
+```
+```bash
 eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
+```
+```bash
 eval $(gp env -e SCREENER_API_KEY=<screener_api_key>)
 ```
 
