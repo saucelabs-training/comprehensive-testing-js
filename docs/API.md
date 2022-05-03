@@ -55,7 +55,7 @@ it('comments returns 200 and 500 body length', () => {
 
 Run the tests
 
-`npx cypress run --spec **/exercise.spec.js`
+`npx cypress run --spec **/network/exercise.spec.js`
 
 ### 🏋️‍♀️ Let's try a `POST`
 
@@ -81,7 +81,7 @@ Run the tests
 - Follow instructions for test `it("Can create new user on /posts", () => {`
 - Run the tests
 
-`npx cypress run --spec **/exercise.spec.js`
+`npx cypress run --spec **/network/exercise.spec.js`
 
 ### 🏋️‍♀️ Let's try a `PUT`
 
@@ -110,7 +110,7 @@ Run the tests
 - Implement test `it("Can update posts")` by following instructions
 - Run the tests
 
-`npx cypress run --spec **/exercise.spec.js`
+`npx cypress run --spec **/network/exercise.spec.js`
 
 ## 📝Summary
 
