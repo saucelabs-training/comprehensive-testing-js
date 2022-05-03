@@ -40,7 +40,7 @@ npx cypress open
 
 ### 🏋️‍♀️Write a Cypress test to make sure that our app opens.
 
-1. In your IDE open `cypress/integration/exercise.spec.js`
+1. In your IDE open `cypress/integration/e2e/exercise.spec.js`
 2. Follow instructions to implement `it('loads')` test
 
 ---
