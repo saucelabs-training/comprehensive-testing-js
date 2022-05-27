@@ -8,7 +8,7 @@
 
 ✅ API automation
 
-[SUT](https://jsonplaceholder.cypress.io/)
+[SUT](https://jsonplaceholder.typicode.com/)
 
 [Guide to API](https://jsonplaceholder.typicode.com/guide/)
 
